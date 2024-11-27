@@ -1,0 +1,67 @@
+/* Ensures that the entire table is centered */
+.table-container {
+    display: flex;
+    padding: 20px;
+}
+
+/* Centers the header text */
+.table-header {
+    background-color: #680000;
+    color: white;
+    text-align: center;
+}
+
+/* Table wrapper and layout adjustments */
+.table-wrapper {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    border: 1px solid #ccc; /* Outer border */
+}
+
+/* Ensures that table rows have a border but no vertical lines for cells */
+.table-cell, .table-header th {
+    border-top: 1px solid #ccc;  /* Horizontal border */
+    border-bottom: 1px solid #ccc; /* Horizontal border */
+    padding: 8px;
+    text-align: center;
+}
+
+/* Removes vertical lines between columns, but keeps the outer border */
+.table-wrapper td:not(:first-child):not(:last-child), .table-header th:not(:first-child):not(:last-child) {
+    border-right: none;
+}
+
+/* Button group for the details section */
+.button-group {
+    display: flex;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+/* Error message styling */
+.error-message {
+    color: red;
+}
+
+/* Date picker styling */
+.date-picker {
+    margin-bottom: 20px;
+}
+
+/* Adjustments for the 'Details' column content */
+.details-cell {
+    text-align: left; /* Align the details to the left */
+}
+
+/* Optional: Adding space between the buttons in the details section */
+.details-cell button {
+    margin-right: 8px;
+}
+
+/* Keep the student list button group aligned */
+.button-group {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-start; /* Align buttons to the left */
+}

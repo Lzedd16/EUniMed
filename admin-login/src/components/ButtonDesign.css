@@ -1,0 +1,20 @@
+/* src/components/ButtonDesign.css */
+
+.button-design {
+    background-color: #680000;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.button-design:hover {
+    background-color: #f65503;
+}
+
+.button-group button {
+    margin: 5px;
+}
